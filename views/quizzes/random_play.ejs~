@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> practica52
 <h1>
     Juego Aleatorio:
 </h1>
@@ -11,12 +15,18 @@
     <p>
         Pregunta: <b><%= quiz.question %></b>
     </p>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> practica52
     <div class="wideRow">
         <input type="text" class="itemWide" id="answer" name="answer" value="" placeholder="Respuesta" autocomplete="off"/>
         <input type="submit" class="itemNarrow" id="send" value="Comprobar">
     </div>
 </form>
 
+<<<<<<< HEAD
 <h1>
     Pistas:
 </h1>
@@ -53,3 +63,5 @@
     </li>
     <% } %>
 </ul>
+=======
+>>>>>>> practica52
