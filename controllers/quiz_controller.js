@@ -72,12 +72,14 @@ exports.randomcheck = function (req, res, next) {
 
     var result = answer.toLowerCase().trim() === req.quiz.answer.toLowerCase().trim();
     if(!result){
-        req.session.score =0;
+	score =req.session.score;        
+	req.session.score =0;
         req.session.array =[-1];
     }else{
-    req.session.score +=1;}
+    	req.session.score +=1;
+	score =req.session.score;}
     res.render('quizzes/random_result', {
-        score:req.session.score,
+        score:score,
         quiz: req.quiz,
         result: result,
         answer: answer
