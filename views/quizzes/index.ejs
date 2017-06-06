@@ -11,14 +11,15 @@
 </h1>
 
 <table>
-    <% for (var i in quizzes) { %>
+    <% var i;
+    for (i=0; i< quizzes.length;i++) { %>
     <% var quiz = quizzes[i]; %>
     <tr>
         <td>
             <a href="/quizzes/<%= quiz.id %>/play"><%= quiz.question %></a>
         </td>
         <td colspan="2">
-            <small> (by <%= quiz.Author ? quiz.Author.username : "Anómino" %>) </small>
+            <small> (by <%=  quiz.Author ? quiz.Author.username : 'Anonimo' %>) </small>
         </td>
 
         <% if (session.user) { %>
